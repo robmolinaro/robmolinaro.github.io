@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">  
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 content salesforce-con big-gaps">
+                <div class="row gaps justify-content-center">
+                    <h3>Salesforce</h3>
+                </div>
+                <div class="row gaps">
+                    <button class="btn btn-info btn-block gaps" type="button" id="expense-app-btn">Expense App</button>
+                </div>
+                <div class="row gaps">
+                    <button class="btn btn-info btn-block gaps" type="button" id="clicked-exp-btn" data-toggle="modal"
+                        data-target="#clicked-exp-modal">Clicked
+                        Experience</button>
+                </div>
+            </div>
+            <div class="col content salesforce-con">
+                <div class="content big-gaps card card-color" id="expense-app-div">
+                    <h3 class="card-header">Expense App <small class="text-muted">Lightning Web Component</small></h3>
+                    <div id="expense-carousel" class="carousel slide carousel-fade card-body carousel-image"
+                        data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#expense-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#expense-carousel" data-slide-to="1"></li>
+                            <li data-target="#expense-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 carousel-image" src="images/expense-reporting-app.png"
+                                    alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Expense App</h5>
+                                    <p>An LWC that allows ease of viewing expense reports.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 carousel-image" src="images/expense-reporting-schema.png"
+                                    alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Custom sObjects</h5>
+                                    <p>The LWC is backed by several custom sObjects.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 carousel-image" src="images/expense-reporting-apex.png"
+                                    alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Apex</h5>
+                                    <p>The LWC uses a custom Apex controller to query Salesforce data.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#expense-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#expense-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p>The Expense Report Lightning Web Component is composed from several components:</p>
+                        <ul>
+                            <li>Employee Panel</li>
+                            <li>Expense Report Panel</li>
+                            <li>Expense Item Panel</li>
+                            <li>Employee Tile</li>
+                            <li>Expense Report Tile</li>
+                            <li>Expense Item Tile</li>
+                        </ul>
+                        <p>Each panel queries a custom sObject and pulls in the appropriate records. The custom Apex
+                            controller respects sharing rules and SOQL queries are run with security enforced to take
+                            into account permissions and field level security.</p>
+                        <p>The tiles display basic information from each associated record. The magnifying glass will
+                            display the related records associated with the tile's record in the appropriate panel. The
+                            up arrow icon will open the record in another tab.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="https://github.com/robmolinaro/ExpensesApp"
+                                    class="btn btn-block btn-outline-dark" target="_blank">Github Repo</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDn0000002zNi%26isdtp=p1"
+                                    class="btn btn-block btn-outline-dark" target="_blank">Salesforce Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content big-gaps card card-color" id="clicked-exp-div">
+                    <h3 class="card-header">Clicked Experience <small class="text-muted">Marketing Cloud Team
+                            Sprint</small>
+                    </h3>
+                </div>
+                <div class="modal fade" id="clicked-exp-modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Clicked Experience <small class="text-muted">Marketing Cloud
+                                        Team Sprint</small></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This <a
+                                        href="https://app.clicked.com/experiences/salesforce-marketing-cloud-team-sprint-january-23/">Clicked
+                                        Experience</a> is in progress and runs from January 23 to February 9. Please
+                                    check back in
+                                    later for more details.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>

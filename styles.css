@@ -1,0 +1,47 @@
+.logo {
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.headers {
+    background-color: rgb(176, 196, 222);
+}
+
+.inline-anchor {
+    top: vh26;
+}
+
+.carousel-image {
+    max-height: 600px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.pads {
+    padding: 10px;
+}
+
+.gaps {
+    margin: 2px 2px 0px 0px;
+}
+
+.md-gaps {
+    margin: 5px 5px;
+}
+
+.big-gaps {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo-margin {
+    margin: 10px 10px 10px -5px;
+}
+
+.content {
+    display: none;
+}
+
+.card-color {
+    background-color: rgb(185, 207, 235);
+}
