@@ -60,7 +60,7 @@
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
-    box-shadow: 3px 3px rgb(185, 207, 235);
+    box-shadow: 3px 3px rgb(176, 196, 222);
   }
   
   #myBtn:hover {
